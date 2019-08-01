@@ -196,7 +196,7 @@ Wiki 页面中提供了多种编辑器的安装方法，其中就包括 Sublime 
 ## 启用 gopls
 
 1. 打开命令面板（Ctrl+Shift+P）
-2. 找到并执行 “LSP: Enable La“nguage Server Globally”
+2. 找到并执行 “LSP: Enable Language Server Globally”
    ![](sublime-text-remote-gopls-lsp2.png)
 3. 选择 gopls，注意别选错了(有个叫 golsp，很容易混淆）
 4. 打开配置文件：

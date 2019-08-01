@@ -160,7 +160,7 @@ ns4.jdcache.com.        720     IN      A       106.39.177.32
 * 每个 `.com` 域的权威 DNS 服务器：`*.gtld-servers.net` 
 * 每个域名的权威 DNS 服务器：`ns*.jdcache.com` 
 
-做了一次 A/AAAA 记录查询，**完全忽略了胶水记录**，在 `tcpdump` 命令输出过程中，明显感觉到了延时。
+做了一次 A/AAAA 记录查询，**完全忽略了胶水记录**，因此在上面 `dig` 命令输出过程中，**明显感觉到了卡顿**。
 
 tcpdump 输出：
 
@@ -490,4 +490,4 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 
 # 结论
 
-`dig +trace` 确实不等同于递归查询，根据不同 `dig` 的版本，它可能会忽略全部或部分胶水记录。
+`dig +trace` 确实不等同于递归查询，不同版本的 `dig`，可能会忽略全部或部分胶水记录。

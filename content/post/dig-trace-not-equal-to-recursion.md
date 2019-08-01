@@ -488,6 +488,8 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 
 权威服务器没有收到 NS 查询，说明 `8.8.8.8` 和 `114.114.114.114` 这两个递归服务确实使用了胶水记录，其它递归服务器应该也遵循同样的规范吧？（再次期待熟读 RFC 的施主贡献下相关规范资料所在章节）
 
+老衲后来在 serverfault 上找到了一个同样的提问：[Is dig +trace always accurate?](https://serverfault.com/questions/482913/is-dig-trace-always-accurate)
+
 # 结论
 
 `dig +trace` 确实不等同于递归查询，不同版本的 `dig`，可能会忽略全部或部分胶水记录。
